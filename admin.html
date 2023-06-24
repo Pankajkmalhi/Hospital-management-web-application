@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Medical Services Admin</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+<h1>Medical Services Admin</h1>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="patient.php">Patient</a></li>
+<li><a href="doctor.php">Doctor</a></li>
+<li><a href="admin.php">Admin</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Add City</h2>
+<form action="add_city.php" method="post">
+<label for="city_name">City Name:</label>
+<input type="text" id="city_name" name="city_name" required>
+<button type="submit">Add City</button>
+</form>
+</section>
+<section>
+<h2>Add Doctor</h2>
+<form action="add_doctor.php" method="post">
+<label for="doctor_name">Doctor Name:</label>
+<input type="text" id="doctor_name" name="doctor_name" required>
+<label for="doctor_specialist">Specialist:</label>
+<input type="text" id="doctor_specialist" name="doctor_specialist" required>
+<label for="doctor_city">City:</label>
+<select id="doctor_city" name="doctor_city" required>
+<option value="">Select a city</option>
+<option value="New York">New York</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Chicago">Chicago</option>
+</select>
+<button type="submit">Add Doctor</button>
+</form>
+</section>
+<section>
+<h2>Modify Doctor Details</h2>
+<form action="modify_doctor.php" method="post">
+<label for="doctor_id">Doctor ID:</label>
+<input type="text" id="doctor_id" name="doctor_id" required>
+<label for="doctor_name">Doctor Name:</label>
+<input type="text" id="doctor_name" name="doctor_name" required>
+<label for="doctor_specialist">Specialist:</label>
+<input type="text" id="doctor_specialist" name="doctor_specialist" required>
+<label for="doctor_city">City:</label>
+<select id="doctor_city" name="doctor_city" required>
+<option value="">Select a city</option>
+<option value="New York">New York</option>
+<option value="Los Angeles">Los Angeles</option>
+<option value="Chicago">Chicago</option>
+</select>
+<button type="submit">Modify Doctor Details</button>
+</form>
+</section>
+<section>
+<h2>Delete City</h2>
+<form action="delete_city.php" method="post">
+<label for="city_name">City Name:</label>
+<input type="text" id="city_name" name="city_name" required>
+<button type="submit">Delete City</button>
+</form>
+</section>
+<section>
+<h2>Delete Doctor</h2>
+<form action="delete_doctor.php" method="post">
+<label for="doctor_id">Doctor ID:</label>
+<input type="text" id="doctor_id" name="doctor_id" required>
+<button type="submit">Delete Doctor</button>
+</form>
+</section>
+<section>
+<h2>Create User/Login</h2>
+<form action="create_user.php" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<button type="submit">Create User/Login</button>
+</form>
+</section>
+<section>
+<h2>Manage Information/Details</h2>
+<p>Here you can manage information/details on the website.</p>
+</section>
+</main>
+<footer>
+<p>&copy;  All rights reserved.</p>
+</footer>
+</body>
+</html>
